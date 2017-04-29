@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {Register} from "../register/register";
 import {NgForm} from "@angular/forms";
 import {Auth} from "../../providers/auth";
+import {Home} from "../home/home";
 
 /**
  * Generated class for the SignIn page.
@@ -33,7 +34,7 @@ export class SignIn {
     console.log('entró')
     this.auth.signIn(form.value.email, form.value.password)
       .subscribe(
-        response =>console.log(response),
+        response => this.navCtrl.push(Home),
         error => console.log(error)
       );
 

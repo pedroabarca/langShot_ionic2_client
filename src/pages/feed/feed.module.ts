@@ -7,7 +7,7 @@ import { Feed } from './feed';
     Feed,
   ],
   imports: [
-    IonicModule.forChild(Feed),
+    IonicModule.forRoot(Feed),
   ],
   exports: [
     Feed

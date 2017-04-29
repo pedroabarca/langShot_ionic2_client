@@ -7,7 +7,7 @@ import { Profile } from './profile';
     Profile,
   ],
   imports: [
-    IonicModule.forChild(Profile),
+    IonicModule.forRoot(Profile),
   ],
   exports: [
     Profile

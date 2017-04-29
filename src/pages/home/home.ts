@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
+import {Feed} from "../feed/feed";
+import {Story} from "../story/story";
+import {Profile} from "../profile/profile";
 
 /**
  * Generated class for the Home tabs.

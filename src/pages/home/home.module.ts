@@ -7,7 +7,7 @@ import { Home } from './home';
     Home,
   ],
   imports: [
-    IonicModule.forChild(Home),
+    IonicModule.forRoot(Home),
   ]
 })
 export class HomeModule {}

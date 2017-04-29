@@ -10,12 +10,20 @@ import { Register } from "../pages/register/register"
 import {FormsModule} from "@angular/forms";
 import {Auth} from "../providers/auth";
 import {HttpModule} from "@angular/http";
+import {Feed} from "../pages/feed/feed";
+import {Story} from "../pages/story/story";
+import {Profile} from "../pages/profile/profile";
+import {Home} from "../pages/home/home";
 
 @NgModule({
   declarations: [
     MyApp,
     SignIn,
-    Register
+    Register,
+    Home,
+    Feed,
+    Story,
+    Profile
   ],
   imports: [
     BrowserModule,
@@ -27,7 +35,11 @@ import {HttpModule} from "@angular/http";
   entryComponents: [
     MyApp,
     SignIn,
-    Register
+    Register,
+    Home,
+    Feed,
+    Story,
+    Profile
   ],
   providers: [
     StatusBar,

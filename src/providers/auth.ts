@@ -20,11 +20,11 @@ export class Auth {
       {name:name, email:email, user_name: user_name, password:password},
       {headers: new Headers({'X-Requested-With':'XMLHttpRequest'})});
   }
+
   signIn(email:string, password:string){
     return this.http.post('http://localhost:8000/api/user/signin',
       { email:email, password:password},
       {headers: new Headers({'X-Requested-With':'XMLHttpRequest'})});
-
   }
 
 }

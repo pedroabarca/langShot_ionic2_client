@@ -7,7 +7,7 @@ import { Story } from './story';
     Story,
   ],
   imports: [
-    IonicModule.forChild(Story),
+    IonicModule.forRoot(Story),
   ],
   exports: [
     Story
