@@ -17,7 +17,7 @@ import {Auth} from "../../providers/auth";
 })
 export class SignIn {
 
-  constructor(private auth:Auth,private navCtrl: NavController, private SnavParams: NavParams) {
+  constructor(private auth:Auth, private navCtrl: NavController, private SnavParams: NavParams) {
 
   }
 
@@ -30,6 +30,7 @@ export class SignIn {
   }
 
   onSignIn(form:NgForm){
+    console.log('entró')
     this.auth.signIn(form.value.email, form.value.password)
       .subscribe(
         response =>console.log(response),

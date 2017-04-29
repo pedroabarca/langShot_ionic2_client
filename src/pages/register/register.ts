@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {NgForm} from "@angular/forms";
 import {Auth} from "../../providers/auth";
+import {NgForm} from "@angular/forms";
 import {SignIn} from "../signIn/signIn";
+
 
 /**
  * Generated class for the Register page.
